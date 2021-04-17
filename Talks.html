@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box; 
+}
+
+body {margin:0; font-family: Arial, Helvetica, sans-serif;}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 43%;
+  padding: 15px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+    
+.column3 {
+  float: left;
+  width: 3%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div {
+  text-align: justify;
+  line-height: 1;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="topnav">
+  <a href="#">About</a>
+  <a href="#">Papers</a>
+  <a href="#">Talks</a>
+  <a href="#">Teaching</a>
+</div>
+
+      
+    
+<div class="column3">
+</div>
+
+<div class="row">
+  <div class="column2">
+    <h2> Peer-reviewed conference (selected) </h2>
+      <ol>
+          <li> 
+              <p>
+                  Two types of reference to <em>wh</em>-dependecies <br>
+                  2021. <em>SALT 31</em> at Brown University
+              </p> 
+          </li> 
+           <li>
+               <p>
+                   <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://www.researchgate.net/publication/337331139_Echo_wh-questions_A_scope_analysis" target="_blank" rel="noopener noreferrer">Echo <em>wh</em>-questions: A scope analysis</a></span> <br>
+                   2019. <em>NELS 50</em> at MIT
+           </li>
+            <li>
+                <p>
+                    Making <em>wh</em>-phrases dynamic: A case study of Mandarin <em>wh</em>-conditionals <br>
+                    2019. <em>TEAL 12</em> at University of Macau <br>
+                    2019. <em>SALT 29</em> at UCLA 
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://drive.google.com/file/d/1MOASsJoLqa1LAs886kR6WN7u30YfRdcE/view" target="_blank" rel="noopener noreferrer">Semantics of metalinguistic focus</a></span> <br>
+                    2017 <em>Amsterdam Colloquium</em> at University of Amsterdam 
+                </p>
+            </li>
+            <li>
+                <p>
+                    Questioning speech acts <br>
+                    2017 <em>NELS 48</em> at University of Iceland <br>
+                    2017 <em>SuB 22</em> at ZAS
+                </p>
+            </li>
+            <li>
+                <p>
+                     <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://drive.google.com/file/d/1xibNoylsV1o0lwPu8WBHc5gRoT5dIvOB/view" target="_blank" rel="noopener noreferrer">Event-related relative measurement</a></span> <br>
+                     2017 <em>CLS</em> at University of Chicago <br>
+                     2016 <em>SuB 21</em> at University of Edinburgh
+                </p>
+            </li>
+            <li>
+                <p>
+                     <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://drive.google.com/file/d/0B_oUHkpbjliFbmxFU0VNelJLV2s/view" target="_blank" rel="noopener noreferrer">Fragment questions: Deleting question items</a></span> <br>
+                     2015 <em>NELS 46</em> at Concordia University <br>
+                </p>
+            </li>
+            <li>
+                <p>
+                     <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://nyusemantics.github.io/handouts/li-law-fall-2015_slides.pdf" target="_blank" rel="noopener noreferrer">Alternatives in different dimensions: A case study of focus intervention</a></span> <br>
+                     2014 <em>GLOW 37</em> at CRISSP, Brussels <br>
+                </p>
+            </li>
+      </ol> 
+  </div>
+  
+  <div class="column">
+      <h2> Invited talks </h2>
+      <ol>
+          <li> 
+              <p>
+                  Echo <em>wh</em>-questions: A scope analysis <br>
+                  2019 at Zhejiang University <br>
+                  2018 at Tsinghua University 
+              </p> 
+          </li> 
+           <li>
+               <p>
+                   Questioning speech acts <br>
+                   2018 at Beijing University of Language and Culture <br>
+                   2018 at Harvard University 
+           </li>
+      </ol> 
+  </div>
+  
+
+</div>
+
+</body>
+</html>
