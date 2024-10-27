@@ -1,137 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Haoze Li</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box; 
-}
-
-body {margin:0; font-family: Tahoma, sans-serif;}
-
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #800000;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column2 {
-  float: left;
-  width: 60%;
-  padding: 15px;
-}
-    
-.column3 {
-  float: left;
-  width: 5%;
-  padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-div {
-  text-align: justify;
-  line-height: 1;
-}
-
-p {
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-li { padding: 0; }
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
+<div class="container">
+    <h1>Haoze Li | 李昊澤 </h1>
 
+    <!-- Image placed right after the title -->
+    <img src="{{ url_for('static', filename='LHZ-photo.png') }}" alt="My Photo" style="width: 300px; height: auto; margin-top: 10px;">
 
-
-<div class="topnav">
-  <a href="index.html">About </a>
-  <a href="Paper.html">Papers</a>
-  <a href="Talks.html">Talks</a>
-  <a href="Teaching.html">Teaching</a>
-</div>
-
-
-      
-    
-<div class="column3">
-</div>
-
-<div class="row">
-  <div class="column2">
-    <h2> Haoze Li | 李昊澤 </h2>
-    <p> I'm now an assistant professor at <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://www.ntu.edu.sg/" target="_blank" rel="noopener noreferrer">Nanyang Technological University (NTU)</a></span> in Singapore. My research interest lies primarily in semantics and pragmatics, as well as their interactions with syntax. More specifically, I have worked on Mandarin (and its dialects), Cantonese, English, and Japanese in the following areas:
+    <p> I'm now an assistant professor at Nanyang Technological University (<a href="https://www.ntu.edu.sg/">NTU</a>) in Singapore. 
+        My research interest lies primarily in semantics and pragmatics, as well as their interactions with syntax. 
+        I combine theoretical and experimental methods to address fundamental questions about form and meaning in natural languages.  
     </p>
-    <ul>
-        <li> <p> Form--Meaing Mismatches </p> 
-        </li>
-        <li> <p> Interrogative Meaning </p> 
-        </li>
-        <li> <p> Dynamic Meaning </p> 
-        </li>
-        <li> <p> Focus--Interrogative Interaction </p>
-        </li>
-        <li> <p> Quantification and Measurement </p>
-        </li>
-        <li> <p> Ellipsis </p>
-        </li>
-    </ul> 
-    <p> E-mail: haozeli.li at gmail dot com
-    </p>  
-  </div>
-  
-  <div class="column">
-      <p> <img src="LHZ-photo.png" style="width:70%"> 
-      </p>
-      <p>
-        <span style="color: darkred;"><a class="dhtgD aw5Odc" style="color: #800000;" href="https://www.researchgate.net/profile/Haoze-Li-5" target="_blank" rel="noopener noreferrer">
-        My ResearchGate page</a>
-        </span>
-      </p>
-  </div>
+    <p> Email: haozeli.li at gmail dot com </p>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('about') }}" class="nav-link">Research</a>
+            <a href="{{ url_for('contact') }}" class="nav-link">Teaching</a>
+            <a href="https://www.researchgate.net/profile/Haoze-Li-5/research" class="nav-link">ResearchGate</a>
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=VmonH8UAAAAJ&pagesize=80" class="nav-link">Google</a>
+            <a href="https://github.com/haozeli-ling/awssp" class="nav-link">Asian Online Workshop</a>
+            <a href="{{ url_for('misc') }}" class="nav-link">misc</a>
+        </nav>
+    </header>
 </div>
-
 </body>
-</html>
+
+</html> 

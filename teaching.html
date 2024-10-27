@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1> Teaching </h1>
+
+    <p> I have taught semantics, pragmatics, and experimental linguistics at various levels and across institutions in Asia and North America (see the list). 
+        I designed the semantics curriculum for a undergraduate linguistics program, 
+        which included both an introductory and an advanced course in formal semantics, 
+        as well as for a MA (coursework) program. 
+    </p>
+    <p> The instituations where I have taught: 
+        <ul class="custom-list">
+            <li> <a href="https://www.ntu.edu.sg/">Nanyang Technological University, Singapore</a> (NTU) 2024 - present   </li>
+            <li> <a href="https://www.ucsc.edu/">University of California, Santa Cruz</a> (UCSC) 2022 - 2023  </li>
+            <li> <a href="https://english.gdufs.edu.cn/">Guangdong University of Foreign Studies</a> (GDUFS) 2020 - 2022  </li>
+        </ul>
+    </p>
+    <p>
+        On this page, I share my course syllabi and/or course materials,
+        which I hope you'll find helpful for designing a semantics course or studying semantics. 
+    </p>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" class="nav-link"> Home </a>
+            <a href="{{ url_for('about') }}" class="nav-link">Research</a>
+            <a href="https://www.researchgate.net/profile/Haoze-Li-5/research" class="nav-link">ResearchGate</a>
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=VmonH8UAAAAJ&pagesize=80" class="nav-link">Google</a>
+            <a href="https://github.com/haozeli-ling/awssp" class="nav-link">Asian Online Workshop</a>
+            <a href="{{ url_for('misc') }}" class="nav-link">misc</a>
+        </nav>
+    </header>
+
+</body> <br> 
+
+<body>
+
+    <div class="two-columns">
+        <div class="column">
+            <h3> Undergraduate </h3>
+            <ol class="custom-list">
+                <li> <a href="https://github.com/haozeli-ling/Semantics001/tree/main">Introductory Semantics</a> <br>
+                      2024 <em>Semantics & Pragmatics</em> at NTU <br>
+                      2023 <em>Semantics I</em> at UCSC <br>
+                      2021, 2022 <em>Introduction to Semantics</em> at GDUFS
+                </li> 
+                <li> Intermediate Semantics <br>
+                     2024, 2025 <em>Semantic Theory</em> at NTU <br>
+                     2023 <em>Semantics II</em> at UCSC <br>
+                     2022 <em>Formal Semantics</em> at GDUFS
+                </li>
+                <li> Advanced Semantics <br>
+                     2023 <em>Semantics III</em> at UCSC <br>
+                </li>
+                <li> Pragmatics <br>
+                    2025 <em>Pragmatic Theory</em> at NTU <br>
+               </li>
+                <li> Experimental Linguistics <br>
+                     2024 <em>Experimenting Spoken Language</em> at NTU <br>
+                </li>
+                <li> Chinese Linguistics <br>
+                    2023 <em>Structure of Chinese Languages</em> at UCSC <br>
+               </li>
+               <li> Intermediate Syntax <br>
+                    2022 <em>Topics in Syntax</em> at GDUFS <br>
+               </li>
+            </ol>
+        </div>
+        <div class="column">
+            <h3> Graduate </h3>
+            <ol class="custom-list">
+                <li>
+                    Semantics Seminar <br>
+                    2022. <em> <a href="https://github.com/haozeli-ling/Questions">Semantics of Questions</a> </em> at UCSC
+                </li>
+                <li>
+                    Introductory Semantics (Graduate Level) <br>
+                    2024 <em> Structure of Meaning (MA) </em> at NTU <br>
+                    2021, 2022 <em> Graduate Level Formal Semantics </em> at GDUFS
+                </li>
+            </ol>
+        </div>
+    </div> <br> <br>
+
+    <style>
+        .two-columns {
+            display: flex;
+            gap: 25px; /* Space between the two columns */
+        }
+    
+        .column {
+            flex: 1; /* Each column takes up equal width */
+        }
+    </style>
+
+</body>
+
+</html>

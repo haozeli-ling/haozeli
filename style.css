@@ -1,0 +1,133 @@
+/* static/style.css */
+
+
+
+header {
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar styling */
+/* Center-align the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between each rectangle */
+    margin-top: 20px;
+}
+
+/* Individual rectangle link styling */
+/* Styling each nav link as a smaller rectangle */
+.nav-link {
+    color: #fff;
+    background-color: #106cbd;  /* Blue background color */
+    padding: 5px 10px;          /* Smaller padding for smaller rectangles */
+    border-radius: 4px;         /* Slightly rounded corners */
+    text-decoration: none;
+    font-size: 0.9em;           /* Slightly smaller font */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+body {
+    font-family: Trebuchet MS, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 100px;
+    line-height: 1.6; 
+}
+
+/* Style for specific headings */
+h1 {
+    text-align: left;
+    margin-top: 50px;
+    font-family: 'Tahoma', sans-serif;
+    color: maroon;
+}
+
+h2, h3 {
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Tahoma', sans-serif;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.container {
+    max-width: 800px;           /* Limit the width of the content */
+    padding: 20px;              /* Padding inside the container */
+}
+
+
+/* Collapsible component styling */
+.collapsible-content {
+    display: none; /* Hide content by default */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.collapsible-text {
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.collapsible-title {
+    cursor: pointer;
+    font-weight: bold;
+    color: orange;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+}
+
+.collapsible-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.collapsible-button:focus {
+    outline: none;
+}
+
+
+.custom-list {
+    padding-left: 1.5em;            /* Removes padding on the left */
+    margin-left: 0;
+}
+
+.custom-list li {
+    margin-bottom: 0.5em;         /* Space between each item */
+    text-align: left; 
+}
+
+
+
+/* .no-indent {
+    padding-left: 1.5em;
+    margin-left: 0;
+}
+
+.spaced-list li {
+    margin-bottom: 0.5em;} /* Adjust this value for more or less space */

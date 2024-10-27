@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>
+        Misc
+    </h1>
+    <p>  I've stored some fun stories on this page. 
+    </p>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}" class="nav-link"> Home </a>
+            <a href="{{ url_for('about') }}" class="nav-link">Research</a>
+            <a href="{{ url_for('contact') }}" class="nav-link">Teaching</a>
+            <a href="https://www.researchgate.net/profile/Haoze-Li-5/research" class="nav-link">ResearchGate</a>
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=VmonH8UAAAAJ&pagesize=80" class="nav-link">Google</a>
+            <a href="https://github.com/haozeli-ling/awssp" class="nav-link">Asian Online Workshop</a>
+        </nav>
+    </header>
+
+    <h2>
+        Yard paving
+    </h2>
+    <p>
+        Over the course of the summer 2024, 
+            my wife and I dedicated ourselves to transforming our yard into a beautifully paved space, 
+            intended as a special gift for our son. The project was a labor of love, 
+            involving meticulous planning and hands-on effort from start to finish.
+            While the result doesn’t look very professional, we are still very proud of this achievement. 
+            As two people who grew up in Asian cities, 
+            this was the first time in our lives that we completed a task that involved physically transforming the land. 
+            Through this yard work, we got a firsthand experience of the daily labor of Americans. 
+            Anyway, the yard is now a space where the whole family can play, relax, and enjoy the outdoors, 
+            surrounded by the care and effort that went into creating it. 
+    </p>
+ 
+    <span class="collapsible-text"> + preparing the ground </span>
+    <div class="collapsible-content">
+        <p> We had to dig down 2 inches into the existing ground and compact the soil to create a solid, 
+            level foundation that would ensure the longevity and stability of the paving.
+            This step was physically exhausting but crucial, as it prevented future shifting or sinking of the pavers. 
+            In the end, we gave up and hired professionals to handle it. 
+            Watching them finish in a few hours with an excavator what we thought would take us a month really made us appreciate the greatness of the Industrial Revolution. 
+        </p>
+    </div> <br>
+
+    <span class="collapsible-text"> + purchasing pavers </span>
+    <div class="collapsible-content">
+        <p> we sourced the materials, 
+            selecting high-quality pavers that would not only be durable but also aesthetically pleasing. 
+            My wife carefully considered the color, texture, 
+            and size of the pavers to ensure they would complement the overall design of the yard and create a welcoming atmosphere.
+            Once the pavers were chosen, we spread a layer of sand over the compacted soil. 
+            The sand served as a cushioning layer, providing a smooth, even surface for the pavers to rest on.
+        </p>
+    </div> <br>
+    
+    <span class="collapsible-text"> + paving </span>
+    <div class="collapsible-content">
+        <p> When the pavers were delivered, we began the painstaking process of laying the pavers. 
+            Piece by piece, we carefully placed each paver according to the design, making sure that they were properly aligned and snugly fitted together. 
+            We paid close attention to maintaining consistent spacing between the pavers, 
+            ensuring that the overall pattern remained true to the design I had envisioned. 
+            During the process, we had to continually check the level and make adjustments as needed to ensure a natural slope, 
+            which is crucial to prevent the water from pooling on the surface during rain. 
+        </p>
+    </div> <br>
+
+    <span class="collapsible-text"> + Gluing pavers </span>
+    <div class="collapsible-content">
+        <p> Once all the pavers were in place, we added a final layer of a special glue sand, 
+            sweeping it into the joints between the pavers. 
+            This sand helped to lock the pavers in place and provided a stable, 
+            secure surface that would stand up to foot traffic and weather conditions. 
+        </p>
+    </div>
+
+    <h2>
+        Learning semantics by copying
+    </h2>
+    <p>
+        My first course in semantics was with <a href="https://ling.cuhk.edu.hk/people/faculty-linguistics/pan-haihua/">Professor Haihua Pan</a>
+        (referred to here as Pan laoshi*) at City University of Hong Kong. 
+        Pan laoshi is an outstanding semanticist and a passionate teacher. 
+        However, having forgotten most of the math I learned in high school, 
+        I struggled to keep up with the class and often found myself dozing off during lectures, 
+        leaving me with little to show for my efforts. 
+        Still, I could sense the rigor of semantic analysis, 
+        rooted in the universal formal system of mathematical logic, 
+        which hinted at a wide range of applications. 
+        Motivated by this, I decided to take the course again. 
+        To stay engaged, I copied Pan laoshi’s compositional derivations onto my notebook 
+        as he worked them out on the whiteboard, even though I didn’t fully understand them. 
+        I continued copying diligently until, toward the end of the semester, 
+        I suddenly grasped the basic concept of lambda calculus: ‘Ah, so that’s how it works!’ 
+        From then on, I could perform compositional derivations on my own, 
+        which marked the beginning of my first project in semantics. <br>
+        *'laoshi' (literrally mean 'teacher') is an honorific term of respect for teachers in Asian cultures.
+    </p>
+
+    <script>
+        // JavaScript to toggle each collapsible content independently
+        document.addEventListener("DOMContentLoaded", function() {
+            const collapsibleTexts = document.querySelectorAll(".collapsible-text");
+    
+            collapsibleTexts.forEach(text => {
+                text.addEventListener("click", function() {
+                    const content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                        this.textContent = this.textContent.replace("−", "+");
+                    } else {
+                        content.style.display = "block";
+                        this.textContent = this.textContent.replace("+", "−");
+                    }
+                });
+            });
+        });
+    </script>
+
+</body> 
+<br>
+<br>
+<br>
+
+
+</html>
