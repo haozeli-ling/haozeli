@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for(filename='style.css') }}">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <h1>Haoze Li | 李昊澤 </h1>
 
     <!-- Image placed right after the title -->
-    <img src="{{ url_for('static', filename='LHZ-photo.png') }}" alt="My Photo" style="width: 300px; height: auto; margin-top: 10px;">
+    <img src="{{ url_for(filename='LHZ-photo.png') }}" alt="My Photo" style="width: 300px; height: auto; margin-top: 10px;">
 
     <p> I'm now an assistant professor at Nanyang Technological University (<a href="https://www.ntu.edu.sg/">NTU</a>) in Singapore. 
         My research interest lies primarily in semantics and pragmatics, as well as their interactions with syntax. 
