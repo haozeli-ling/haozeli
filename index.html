@@ -6,12 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Haoze Li </title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Base styles for all screen sizes */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Image styling */
+        img {
+            max-width: 100%; /* Ensures the image doesn't overflow its container */
+            height: auto;
+            display: block; /* Centers the image */
+            margin: 10px auto;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            flex-wrap: wrap; /* Allows links to wrap to the next line on small screens */
+            justify-content: center;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+        }
+
+        .nav-link {
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #007BFF;
+        }
+
+        /* --- Media Query for Mobile --- */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .navbar {
+                flex-direction: column; /* Stacks the navigation links vertically */
+                align-items: center; /* Centers the links */
+            }
+
+            .nav-link {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #eee; /* Adds a separator between links */
+            }
+
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+    
 </head>
 
 <body>
 <div class="container">
     <h1>Haoze Li | 李昊澤 </h1>
-
     <!-- Image placed right after the title -->
     <img src="LHZ-photo.png" alt="My Photo" style="width: 300px; height: auto; margin-top: 10px;">
 
