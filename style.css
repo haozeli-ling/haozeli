@@ -1,7 +1,5 @@
 /* static/style.css */
 
-
-
 header {
     padding: 0;
     text-align: center;
@@ -123,7 +121,6 @@ h3 {
 }
 
 
-
 /* .no-indent {
     padding-left: 1.5em;
     margin-left: 0;
@@ -131,3 +128,25 @@ h3 {
 
 .spaced-list li {
     margin-bottom: 0.5em;} /* Adjust this value for more or less space */
+
+/* --- Media Query for Mobile --- */
+@media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .navbar {
+                flex-direction: column; /* Stacks the navigation links vertically */
+                align-items: center; /* Centers the links */
+            }
+
+            .nav-link {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid #eee; /* Adds a separator between links */
+            }
+
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+        }
