@@ -130,7 +130,7 @@ h3 {
     margin-bottom: 0.5em;} /* Adjust this value for more or less space */
 
 /* --- Media Query for Mobile --- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
             .container {
                 padding: 10px;
             }
