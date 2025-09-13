@@ -35,11 +35,14 @@ header {
 
 body {
     font-family: Trebuchet MS, sans-serif;
-    margin: 0; /* REMOVED fixed margins to allow full screen width */
     padding: 0;
     font-size: 15px;
     text-align: justify;
     line-height: 1.6; 
+    /* These are the rules to center the content on larger screens */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Style for specific headings */
@@ -121,8 +124,10 @@ h3 {
 /* --- Media Query for Mobile --- */
 @media screen and (max-width: 600px) {
     body {
-        /* On mobile, body text alignment can be an issue */
-        text-align: left;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px; /* Use smaller padding for phones */
+        text-align: left; /* Justified text often looks bad on narrow screens */
     }
     .container {
         max-width: 100%; /* Allows the container to fill the entire screen width */
