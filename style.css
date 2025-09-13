@@ -20,7 +20,7 @@ header {
 /* Styling each nav link as a smaller rectangle */
 .nav-link {
     color: #fff;
-    background-color: #106cbd;  /* Blue background color */
+    background-color: #1E3845;  /* Blue background color */
     padding: 5px 10px;           /* Smaller padding for smaller rectangles */
     border-radius: 4px;          /* Slightly rounded corners */
     text-decoration: none;
@@ -46,7 +46,7 @@ body {
 
 /* Style for specific headings */
 h1 {
-    text-align: left;
+    text-align: center; /* Ensures the heading is centered */
     margin-top: 50px;
     font-family: 'Tahoma', sans-serif;
     color: maroon;
@@ -68,6 +68,12 @@ h3 {
     max-width: 900px; /* Limit the width of the content */
     margin: 20px auto; /* Centered horizontally and adds vertical margin */
     padding: 20px; /* Padding inside the container */
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Collapsible component styling */
