@@ -64,7 +64,7 @@ h3 {
 }
 
 .container {
-    max-width: 2000px;           /* Limit the width of the content */
+    max-width: 900px;           /* Limit the width of the content */
     padding: 20px;              /* Padding inside the container */
     margin: auto;
 }
@@ -132,9 +132,9 @@ h3 {
 /* --- Media Query for Mobile --- */
 @media screen and (max-width: 800px) {
             .container {
-                padding: 10px;
+                max-width: 100%; /* Allows the container to fill the entire screen width */
+                padding: 10px; /* Adjusts padding to a smaller value for phones */
             }
-
             .navbar {
                 flex-direction: column; /* Stacks the navigation links vertically */
                 align-items: center; /* Centers the links */
