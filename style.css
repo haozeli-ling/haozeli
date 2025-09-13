@@ -144,4 +144,7 @@ h3 {
     .nav-link:last-child {
         border-bottom: none;
     }
+    .two-columns {
+        flex-direction: column; /* Stacks the columns vertically */
+    }
 }
