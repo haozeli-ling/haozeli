@@ -64,7 +64,7 @@ h3 {
 }
 
 .container {
-    max-width: 900px;           /* Limit the width of the content */
+    max-width: 2000px;           /* Limit the width of the content */
     padding: 20px;              /* Padding inside the container */
     margin: auto;
 }
