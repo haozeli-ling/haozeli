@@ -10,6 +10,8 @@ header {
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: center; /* Horizontally center the nav links */
+    flex-wrap: wrap; /* Allows links to wrap to the next line on small screens */
     gap: 10px; /* Space between each rectangle */
     margin-top: 20px;
 }
@@ -19,13 +21,12 @@ header {
 .nav-link {
     color: #fff;
     background-color: #106cbd;  /* Blue background color */
-    padding: 5px 10px;          /* Smaller padding for smaller rectangles */
-    border-radius: 4px;         /* Slightly rounded corners */
+    padding: 5px 10px;           /* Smaller padding for smaller rectangles */
+    border-radius: 4px;          /* Slightly rounded corners */
     text-decoration: none;
-    font-size: 0.9em;           /* Slightly smaller font */
+    font-size: 0.9em;            /* Slightly smaller font */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
-
 
 /* Hover effect */
 .nav-link:hover {
@@ -34,7 +35,7 @@ header {
 
 body {
     font-family: Trebuchet MS, sans-serif;
-    margin: 0;
+    margin: 0; /* REMOVED fixed margins to allow full screen width */
     padding: 0;
     font-size: 15px;
     text-align: justify;
@@ -62,9 +63,9 @@ h3 {
 }
 
 .container {
-    max-width: 900px;           /* Limit the width of the content */
-    margin: 20px auto;         /* Centered horizontally and adds vertical margin */
-   padding: 20px;              /* Padding inside the container */
+    max-width: 900px; /* Limit the width of the content */
+    margin: 20px auto; /* Centered horizontally and adds vertical margin */
+    padding: 20px; /* Padding inside the container */
 }
 
 /* Collapsible component styling */
@@ -107,48 +108,40 @@ h3 {
     outline: none;
 }
 
-
 .custom-list {
-    padding-left: 1.5em;            /* Removes padding on the left */
+    padding-left: 1.5em; /* Removes padding on the left */
     margin-left: 0;
 }
 
 .custom-list li {
-    margin-bottom: 0.5em;         /* Space between each item */
-    text-align: left; 
+    margin-bottom: 0.5em; /* Space between each item */
+    text-align: left;
 }
-
-
-/* .no-indent {
-    padding-left: 1.5em;
-    margin-left: 0;
-}
-
-.spaced-list li {
-    margin-bottom: 0.5em;} /* Adjust this value for more or less space */
 
 /* --- Media Query for Mobile --- */
 @media screen and (max-width: 600px) {
-            body {
-                /* On mobile, body text alignment can be an issue */
-                text-align: left;
-            }
-            .container {
-                max-width: 100%; /* Allows the container to fill the entire screen width */
-                padding: 10px; /* Adjusts padding to a smaller value for phones */
-            }
-            .navbar {
-                flex-direction: column; /* Stacks the navigation links vertically */
-                align-items: center; /* Centers the links */
-            }
+    body {
+        /* On mobile, body text alignment can be an issue */
+        text-align: left;
+    }
+    .container {
+        max-width: 100%; /* Allows the container to fill the entire screen width */
+        padding: 10px; /* Adjusts padding to a smaller value for phones */
+        margin: 0 auto; /* Remove top/bottom margin to save space */
+    }
+    .navbar {
+        flex-direction: column; /* Stacks the navigation links vertically */
+        align-items: center; /* Centers the links */
+    }
 
-            .nav-link {
-                width: 100%;
-                text-align: center;
-                border-bottom: 1px solid #eee; /* Adds a separator between links */
-            }
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee; /* Adds a separator between links */
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    }
 
-            .nav-link:last-child {
-                border-bottom: none;
-            }
-        }
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+}
